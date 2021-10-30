@@ -1,0 +1,40 @@
+{
+  "managers": [
+    {
+      "id": 1,
+      "name": "张三"
+    },{
+      "id": 2,
+      "name": "李四"
+    },{
+      "id": 3,
+      "name": "王五"
+    },{
+      "id": 4,
+      "name": "赵六"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "骑手管理",
+      "manager": "张三",
+      "personId": 1
+    },{
+      "id": 2,
+      "name": "团购App",
+      "manager": "李四",
+      "personId": 2
+    },{
+      "id": 3,
+      "name": "一元秒杀",
+      "manager": "王五",
+      "personId": 3
+    },{
+      "id": 4,
+      "name": "售前咨询",
+      "manager": "赵六",
+      "personId": 4
+    }
+  ]
+}
