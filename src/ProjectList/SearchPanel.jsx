@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import {useMount} from "../utils";
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -6,13 +7,13 @@ export const SearchPanel = ({param, setParam}) => {
 
     const [users, setUsers] = useState([])
 
-    useEffect(() => {
+    useMount(() => {
         fetch(`${apiUrl}/managers`).then(async res => {
             if (res.ok) {
                 setUsers(await res.json());
             }
         })
-    }, [])
+    })
 
     return <form action="">
         <input type="text" value={param.name} onChange={evt => setParam({
