@@ -1,4 +1,12 @@
-export const List = ({list}) => {
+interface Project {
+    id: string,
+    name: string,
+    manager: string
+}
+interface ListProps {
+    list: Project[]
+}
+export const List = ({list}: ListProps) => {
 
     return <table>
         <thead>

@@ -1,11 +1,24 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {useMount} from "../utils";
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
-export const SearchPanel = ({param, setParam}) => {
+interface SearchPanelProps {
+    param: {
+        name: string,
+        personId: string
+    },
+    setParam: (param: SearchPanelProps['param']) => void
+}
 
-    const [users, setUsers] = useState([])
+interface Users {
+    id: string,
+    name: string
+}
+
+export const SearchPanel = ({param, setParam}: SearchPanelProps) => {
+
+    const [users, setUsers] = useState<Users[]>([])
 
     useMount(() => {
         fetch(`${apiUrl}/managers`).then(async res => {
