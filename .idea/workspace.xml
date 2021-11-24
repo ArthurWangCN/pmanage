@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd15414a-22c1-4e11-bb65-c317afb1af01" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectList/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectList/List.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectList/SearchPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectList/SearchPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="20EHpZAiXYDHuWH4yB0bEFyIfYP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,7 +59,9 @@
       <workItem from="1635603084251" duration="6401000" />
       <workItem from="1636033641735" duration="55000" />
       <workItem from="1637069318827" duration="3635000" />
-      <workItem from="1637422584631" duration="4362000" />
+      <workItem from="1637422584631" duration="4983000" />
+      <workItem from="1637762331659" duration="953000" />
+      <workItem from="1637763309330" duration="2916000" />
     </task>
     <servers />
   </component>
@@ -77,5 +78,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
