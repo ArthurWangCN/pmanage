@@ -3,6 +3,7 @@ import {List} from "./List";
 import {useEffect, useState} from "react";
 import * as qs from "qs";
 import {cleanObject, useDebounce} from "../utils";
+import { useHttp } from "../utils/http";
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -15,9 +16,10 @@ export const ProjectList = () => {
     const debouncedParam = useDebounce(param, 1000)
 
     const [list, setList] = useState([])
+    const _http = useHttp();
 
     useEffect(() => {
-        fetch(`${apiUrl}/projects?${qs.stringify(cleanObject(param))}`).then(async res => {
+        _http('projects', {data: cleanObject(param)}).then(async res => {
             if (res.ok) {
                 setList(await res.json())
             }

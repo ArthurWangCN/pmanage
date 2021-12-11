@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {useMount} from "../utils";
+import { useHttp } from "../utils/http";
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -19,9 +20,10 @@ interface Users {
 export const SearchPanel = ({param, setParam}: SearchPanelProps) => {
 
     const [users, setUsers] = useState<Users[]>([])
+    const _http = useHttp()
 
     useMount(() => {
-        fetch(`${apiUrl}/managers`).then(async res => {
+        _http('managers').then(async res => {
             if (res.ok) {
                 setUsers(await res.json());
             }

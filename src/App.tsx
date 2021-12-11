@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
-import {ProjectList} from "./ProjectList";
-import {TryUseArray} from "./Demo/TryUseArray";
+import { AuthorizeApp } from './AuthorizeApp';
+import { useAuth } from './context/auth-context';
+import { UnauthorizeApp } from './UnauthorizeApp';
 
 function App() {
+  const {user} = useAuth();
   return (
     <div className="App">
-      {/*<ProjectList />*/}
-        <TryUseArray />
+      {
+        user ? <AuthorizeApp /> : <UnauthorizeApp />
+      }
     </div>
   );
 }
